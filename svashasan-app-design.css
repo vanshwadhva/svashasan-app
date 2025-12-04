@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for a cleaner mobile feel */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+}
+
+body {
+    background-color: #f8fafc;
+    /* Matches bg-gray-50 */
+    overscroll-behavior-y: none;
+    /* Prevents pull-to-refresh on mobile browsers for app-like feel */
+}
+
+/* Ensure full height for mobile viewports */
+#root {
+    height: 100vh;
+    width: 100vw;
+}
