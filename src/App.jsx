@@ -1,8 +1,8 @@
+import React from 'react';
+
+// Import your original React component
+import HomeScreen from '../svashasan-app-homescreen';
+
 export default function App() {
-  return (
-    <div className="app">
-      <h1>Svashasan OS - Companion App</h1>
-      <p>Welcome to the Genesis Build</p>
-    </div>
-  );
+  return <HomeScreen />;
 }
